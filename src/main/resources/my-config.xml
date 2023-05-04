@@ -8,7 +8,11 @@
     </bean>
 
     <bean id="message" class="homework1.task1.Message">
-        <property name="message" value="Privet DimAss"/>
+        <property name="str" value="Privet DimAss"/>
+    </bean>
+
+    <bean id="outClass" class="homework1.task1.OutClass">
+        <property name="message" ref="message"/>
     </bean>
 
 </beans>

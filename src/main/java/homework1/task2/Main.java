@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
-        Message message = context.getBean("message", Message.class);
-        message.printMessage();
+        OutClass outClass = context.getBean("outClass", OutClass.class);
+        outClass.printMessage();
     }
 }

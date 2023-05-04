@@ -1,18 +1,24 @@
 package homework1.task2;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
 public class ApplicationConfig {
 
-    @Bean(name="message")
-    public Message getMessage() {
+    @Bean
+    public OutClass outClass() {
+        return new OutClass();
+    }
+
+    @Bean
+    public Message message() {
         return new Message();
     }
 
-    @Bean(name="str")
-    public String getStr() {
-        String str = "Dima kak dela?";
-        return str;
+    @Bean
+    public String str() {
+        return "Dima kak dela?";
     }
 
 }

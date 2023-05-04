@@ -2,12 +2,12 @@ package homework1.task2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-class Message {
+public class OutClass {
 
     @Autowired
-    private String str;
+    private Message message;
 
     public void printMessage() {
-        System.out.println(str);
+        message.printMessage();
     }
 }
