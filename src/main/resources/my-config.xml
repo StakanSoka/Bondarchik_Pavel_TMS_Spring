@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="affafa" class="testing.Her">
+        <property name="color" value="black"/>
+    </bean>
+
+    <bean id="message" class="homework1.task1.Message">
+        <property name="str" value="Privet DimAss"/>
+    </bean>
+
+    <bean id="outClass" class="homework1.task1.OutClass">
+        <property name="message" ref="message"/>
+    </bean>
+
+</beans>
